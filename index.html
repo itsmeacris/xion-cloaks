@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cloak Overlay Studio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloak Overlay</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Cloak Overlay Studio 🧥✨</h1>
+  <h1>🕶️ Cloak Overlay Demo</h1>
+  <p>Upload your character and try different cloaks!</p>
 
-  <div class="controls">
-    <input type="file" id="uploadAvatar" accept="image/*" />
-    <div id="cloakOptions"></div>
+  <input type="file" id="upload" accept="image/*">
+  <div class="canvas-container">
+    <canvas id="canvas"></canvas>
   </div>
 
-  <canvas id="canvas" width="400" height="400"></canvas>
-
-  <button id="downloadBtn">Download Image</button>
+  <div class="cloak-options">
+    <button onclick="setCloak('cloaks/realistic-style.png')">Realistic</button>
+    <button onclick="setCloak('cloaks/anime-style.png')">Anime</button>
+    <button onclick="setCloak('cloaks/cyberpunk.png')">Cyberpunk</button>
+    <button onclick="setCloak('cloaks/dark-fantasy.png')">Dark Fantasy</button>
+    <button onclick="setCloak('cloaks/minimalist-flat-vector.png')">Minimalist</button>
+    <button onclick="setCloak('cloaks/pixel.png')">Pixel</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
