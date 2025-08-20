@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom, #111, #333);
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.controls {
+  margin-bottom: 15px;
+}
+
+#cloakOptions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+#cloakOptions img {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: transform 0.2s, border 0.2s;
+}
+
+#cloakOptions img:hover {
+  transform: scale(1.1);
+  border: 2px solid #ffcc00;
+}
+
+canvas {
+  margin: 20px auto;
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background: #555;
+  touch-action: none;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #ffcc00;
+  color: #000;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
